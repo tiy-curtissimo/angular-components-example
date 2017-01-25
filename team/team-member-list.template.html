@@ -1,0 +1,8 @@
+<div ng-repeat="member in list.members">
+  <div><b>PARENT SCOPE</b>: {{member.firstName}}</div>
+  <team-member on-something="list.log($event)" first-name="member.firstName" member="member"></team-member>
+</div>
+<div>
+  <h4>Messages received from child components</h4>  
+  <pre ng-repeat="message in list.receivedMessages">{{message}}</pre>
+</div>

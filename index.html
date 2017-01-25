@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Starter Page</title>
+    <link rel="stylesheet" href="pure-0.6.2.min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <style>header, main {max-width: 768px; margin: auto; margin-top: 4em;}</style>
+  </head>
+  <body>
+    <header>
+      <fancy-nav>
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item"><a href="http://www.theironyard.com" class="pure-menu-link">The Iron Yard</a></li>
+          <li class="pure-menu-item"><a href="http://www.capitalone.com" class="pure-menu-link">Capital One</a></li>
+        </ul>
+      </fancy-nav>
+    </header>
+
+    <main>
+      <team-member-list></team-member-list>
+    </main>
+
+    <script src="angular-1.6.1.min.js"></script>
+    <script src="angular-ui-router-1.0-rc.min.js"></script>
+    <script src="team/team.module.js"></script>
+    <script src="team/team-member-list.component.js"></script>
+    <script src="team/team-member.component.js"></script>
+    <script src="app.module.js"></script>
+    <script src="fancy-nav.component.js"></script>
+  </body>
+</html>

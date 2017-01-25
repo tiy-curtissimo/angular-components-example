@@ -1,0 +1,14 @@
+<div class="team-member" style="margin-bottom: 2em;">
+    <form class="pure-form pure-form-stacked">
+      <fieldset style="display: inline-block; margin-right: 1em;">
+        <label>Passed by value</label>
+        <input ng-model="teamMember.firstName">
+        <span class="pure-form-message">This should not change the parent scope</span>
+      </fieldset>
+      <fieldset style="display: inline-block">
+        <label>Passed by reference</label>
+        <input ng-model="teamMember.member.firstName">
+        <span class="pure-form-message">This <em>will</em> change the parent scope</span>
+      </fieldset>
+    </form>      
+</div>
